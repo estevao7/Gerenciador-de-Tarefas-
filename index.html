@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Minha lista de tarefas</title>
+		<link rel="stylesheet" href="assets/style.css">
+		<script src="assets/script.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Minha lista de tarefas</h1>
+				<p class="subtitle">Organize o que precisa ser feito hoje.</p>
+			</header>
+
+			<section class="card" aria-labelledby="new-task-title">
+				<h2 id="new-task-title">Adicionar tarefa</h2>
+				<form class="task-form" id="task-form">
+					<label class="sr-only" for="task-input">Nova tarefa</label>
+					<input class="task-input" id="task-input" type="text" placeholder="O que precisa ser feito?" autocomplete="off">
+					<button class="add-button" type="submit">Adicionar</button>
+				</form>
+			</section>
+
+			<section class="card list-card" aria-labelledby="task-list-title">
+				<div class="list-heading">
+					<h2 id="task-list-title">Tarefas</h2>
+					<span class="task-count" id="task-count">0 tarefas</span>
+				</div>
+				<p class="empty-message" id="empty-message">Nenhuma tarefa adicionada ainda.</p>
+				<ul class="task-list" id="task-list"></ul>
+			</section>
+		</main>
+	</body>
+</html>
